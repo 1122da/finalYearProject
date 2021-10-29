@@ -14,6 +14,7 @@ import * as Typography from "../config/Typography";
 import { Formik, validateYupSchema } from "formik";
 import { useFormik } from "formik";
 import { auth } from "../../firebase";
+
 const validationSchema = Yup.object().shape({
   name: Yup.string().required().label("Name"),
   email: Yup.string().required().email().label("Email"),
